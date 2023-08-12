@@ -17,7 +17,9 @@ export default function Home() {
               </h1>
             </div>
             <div className="pl-8 pr-10 leading-relaxed">
-              <p className="mt-4">{MY_DATA.profile.aboutMe}</p>
+              <p className="mt-4 py-1.5 px-3 shadow-[-12px_12px_22px_16px_#d7bdbd45_inset] rounded-xl">
+                {MY_DATA.profile.aboutMe}
+              </p>
             </div>
             <div className="pl-8 pr-10 mt-4">
               <h1 className="text-2xl mb-4 text-teal-500 font-semibold">
@@ -26,7 +28,10 @@ export default function Home() {
               <div>
                 {(MY_DATA.experience || []).map((item, id) => {
                   return (
-                    <div className="" key={"exe" + id}>
+                    <div
+                      className="py-1.5 px-3 mb-3 shadow-[-12px_12px_22px_16px_#d7bdbd45_inset] rounded-xl"
+                      key={"exe" + id}
+                    >
                       <div className="mb-4">
                         <h1 className="text-xl font-semibold">{item.org}</h1>
                         <p>{item.status}</p>
