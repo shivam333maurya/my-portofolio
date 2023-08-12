@@ -2,7 +2,7 @@
 import { MY_DATA } from "./data";
 
 export default function Home() {
-  console.log({ MY_DATA });
+  // console.log({ MY_DATA });
   return (
     <main className="p-3">
       <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-200">
