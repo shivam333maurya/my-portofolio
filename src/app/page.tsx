@@ -9,10 +9,10 @@ export default function Home() {
         <div className="text-black flex ">
           <div className="h-auto bg-green-100 w-full shadow-[-10px_-10px_40px_5px_lightblue_inset]">
             <div className="h-44 flex bg-green-200 justify-center text-black shadow-[-10px_82px_100px_5px_#897d7d9c_inset] flex-col">
-              <h1 className="text-center text-5xl font-bold mt-0 pt-4">
+              <h1 className="text-center max-[600px]:text-3xl text-5xl font-bold mt-0 pt-4">
                 {MY_DATA.profile.name}
               </h1>
-              <h1 className="text-center text-3xl font-medium mt-4 mb-2">
+              <h1 className="text-center max-[600px]:text-2xl text-3xl font-medium mt-4 mb-2">
                 {MY_DATA.profile.profile}
               </h1>
             </div>
