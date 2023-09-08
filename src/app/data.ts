@@ -32,7 +32,7 @@ export const MY_DATA = {
       ],
     },
     {
-      org: "Precious Infosystem",
+      org: "Bestpeers Infosystem",
       status: "React Developer (April2023 - Present)",
       projects: [
         {
@@ -75,7 +75,11 @@ export const MY_DATA = {
     },
     {
       name: "VERSION CONTROL",
-      skillData: ["GIT", "AZURE", "GITHUB", "Bitbucket"],
+      skillData: ["GIT"],
+    },
+    {
+      name: "DEVELOPMENT PLATEFORMS",
+      skillData: ["GITHUB", "Bitbucket", "Jira"],
     },
   ],
 };
