@@ -32,7 +32,7 @@ export const MY_DATA = {
       ],
     },
     {
-      org: "Preciouse Infosystem",
+      org: "Precious Infosystem",
       status: "React Developer (April2023 - Present)",
       projects: [
         {
