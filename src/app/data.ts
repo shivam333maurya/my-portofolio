@@ -32,7 +32,7 @@ export const MY_DATA = {
       ],
     },
     {
-      org: "Bestpeers Infosystem",
+      org: "Preciouse Infosystem",
       status: "React Developer (April2023 - Present)",
       projects: [
         {
@@ -43,6 +43,12 @@ export const MY_DATA = {
           name: "Central 2.0",
           description: [
             "A web application for Advertisement creation, Bookings, Publications of Australian GOVT and Agency tenders.",
+          ],
+        },
+        {
+          name: "SpectraAI",
+          description: [
+            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world.",
           ],
         },
       ],
