@@ -7,7 +7,7 @@ export const MY_DATA = {
     phone: "+917566729275",
     linkedIn: "https://www.linkedin.com/in/shivam-maurya-77013b173",
     aboutMe:
-      "Innovative Frontend developer with 2+ year of experience of building and maintaining responsive website in the recruiting industry. Proficient in HTML, CSS, JavaScript and React Plus modern libraries and frameworks.",
+      "Innovative Frontend developer with 3 year of experience of building and maintaining responsive website in the recruiting industry. Proficient in HTML, CSS, JavaScript and React Plus modern libraries and frameworks.",
   },
   experience: [
     {
@@ -32,7 +32,7 @@ export const MY_DATA = {
       ],
     },
     {
-      org: "Precious Infosystem",
+      org: "Bestpeers Infosystem",
       status: "React Developer (April2023 - Present)",
       projects: [
         {
@@ -60,28 +60,28 @@ export const MY_DATA = {
   },
   skills: [
     {
-      name: "LANGUAGES & LIBRARIES",
+      name: "LANGUAGES, Frameworks & LIBRARIES",
       skillData: [
+        "HTML",
+        "CSS",
         "JavaScript",
         "TypeScript",
-        "CSS",
-        "HTML",
+        "ReactJS",
+        "ReactNative",
+        "NextJS",
+        "NodeJS",
+        "NestJS",
         "Material UI",
         "Tailwind CSS",
+        "AntDesign",
         "Formik",
+        "Redux",
+        "Zustand",
       ],
     },
     {
-      name: "REACT TOOLS",
-      skillData: ["React JS", , "ReactNative", "Next JS", "Webpack", "Redux"],
-    },
-    {
-      name: "FRONTEND DEVELOPMENT TOOLS",
-      skillData: ["BABEL", "NPM", "YARN"],
-    },
-    {
-      name: "VERSION CONTROL",
-      skillData: ["GIT"],
+      name: "DEVELOPMENT TOOLS",
+      skillData: ["NPM", "YARN", "GIT", "BABEL", "Webpack"],
     },
     {
       name: "DEVELOPMENT PLATEFORMS",

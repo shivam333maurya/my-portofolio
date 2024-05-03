@@ -7,8 +7,8 @@ export default function Home() {
     <main className="p-3">
       <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-200">
         <div className="text-black flex ">
-          <div className="h-auto bg-green-100 w-full shadow-[-10px_-10px_40px_5px_lightblue_inset]">
-            <div className="h-44 flex bg-green-200 justify-center text-black shadow-[-10px_82px_100px_5px_#897d7d9c_inset] flex-col">
+          <div className="h-auto w-full shadow-[-10px_-10px_40px_5px_lightblue_inset]">
+            <div className="h-44 flex justify-center text-black shadow-[-10px_82px_100px_5px_#c1afaf9c_inset] flex-col">
               <h1 className="text-center max-[600px]:text-3xl text-5xl font-bold mt-0 pt-4">
                 {MY_DATA.profile.name}
               </h1>
@@ -22,9 +22,7 @@ export default function Home() {
               </p>
             </div>
             <div className="pl-8 pr-10 mt-4">
-              <h1 className="text-2xl mb-4 text-teal-500 font-semibold">
-                EXPERIENCE
-              </h1>
+              <h1 className="text-2xl mb-4 font-semibold">EXPERIENCE</h1>
               <div>
                 {(MY_DATA.experience || []).map((item, id) => {
                   return (
