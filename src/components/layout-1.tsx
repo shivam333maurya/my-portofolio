@@ -6,7 +6,7 @@ export function Layout1() {
     <main className="p-3">
       <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-200">
         <div className="text-black flex ">
-          <div className="h-auto w-full shadow-[-10px_-10px_40px_5px_lightblue_inset]">
+          <div className="h-auto w-full">
             <div className="h-44 flex justify-center text-black shadow-[-10px_82px_100px_5px_#c1afaf9c_inset] flex-col">
               <h1 className="text-center max-[600px]:text-3xl text-5xl font-bold mt-0 pt-4">
                 {MY_DATA.profile.name}
