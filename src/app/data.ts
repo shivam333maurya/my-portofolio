@@ -99,7 +99,7 @@ export const MY_DATA2 = {
     phone: "+917566729275",
     linkedIn: "https://www.linkedin.com/in/shivam-maurya-77013b173",
     aboutMe:
-      "Innovative Frontend developer with 3 years of experience of building and maintaining responsive website in the recruiting industry. Proficient in HTML, CSS, JavaScript and React Plus modern libraries and frameworks.",
+      "Full Stack developer with 3 years of experience of building and maintaining responsive website in the recruiting industry. Proficient in HTML, CSS, JavaScript, React and NodeJS Plus modern libraries and frameworks.",
   },
   experience: [
     {
@@ -109,16 +109,18 @@ export const MY_DATA2 = {
         {
           name: "BACK OFFICE",
           description: [
-            "A web app for back office management for the saloon and spa. This consist of features like appointment cycle including delivery and ratings. The full-fledged calendar and staff management modules.",
+            "A web app for back office management for the saloon and spa.On this project i worked as a frontend developer This consist of features like appointment cycle including delivery and ratings. The full-fledged calendar and staff management modules.",
+            "Tech stack used ReactJs, Bootstrap",
           ],
         },
         {
           name: "XECTA",
           description: [
             "A web app for energy operators.",
-            "Implemented frontend part with react.js,CSS and Material UI",
+            "Implemented frontend part with react.js, CSS Highchart, Datagrid, GraphQL and Material UI",
             "GraphQL is used to narrate the data for the Charts, Datagrids and Graphs.",
             "Worked with Highchart for graphs and charts.",
+            "Tech stack used ReactJS, MUI5, Apollo GraphQL, HighChart",
           ],
         },
       ],
@@ -129,18 +131,23 @@ export const MY_DATA2 = {
       projects: [
         {
           name: "JAWALERAM-COMEX",
-          description: ["A web app for Event reporting and Managing."],
+          description: [
+            "A web app for Event reporting and inventory management for vendors and product manufacturers. Worked as Senior frontend developer, Created multiple form to add informaton about vendors, customers, products, manufacturers",
+            "Tech stack used ReactJS, MUI4, Jest, Enzyme",
+          ],
         },
         {
           name: "Central 2.0",
           description: [
-            "A web application for Advertisement creation, Bookings, Publications of Australian GOVT and Agency tenders.",
+            "A web application for Advertisement creation, Bookings, Publications of Australian GOVT and Agency tenders. Worked as and Senior frontend developer",
+            "Tech stack used ReactJS, MUI6, cypress for automation testing",
           ],
         },
         {
-          name: "SpectraAI",
+          name: "SpectraAI, Spectra-Pro",
           description: [
-            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world.",
+            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
+            "Tech stack used ReactJS, AntDesign, MUI, Apache Echarts, Mapbox, Grafana, Elastic Search Different Databases like Promethious, Everest, Postgres",
           ],
         },
       ],
