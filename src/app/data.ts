@@ -144,7 +144,7 @@ export const MY_DATA2 = {
           ],
         },
         {
-          name: "SpectraAI, Spectra-Pro",
+          name: "Spectra-AI, Spectra-Pro",
           description: [
             "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
             "Tech stack used ReactJS, AntDesign, MUI, Apache Echarts, Mapbox, Grafana, Elastic Search Different Databases like Promethious, Everest, Postgres",
@@ -187,4 +187,133 @@ export const MY_DATA2 = {
       ],
     },
   ],
+};
+
+export const MY_DATA3 = {
+  profile: {
+    name: "Shivam Maurya",
+    address: "Ward No.-11, Village - Baktha, Katni (483775), Madhya Pradesh",
+    email: "shivammauryan369@gmail.com",
+    phone: "+917566729275",
+    linkedIn: "https://www.linkedin.com/in/shivam-maurya-77013b173",
+    gitHub: "https://github.com/shivam333maurya",
+    portfolio: "https://github.com/shivam333maurya",
+    summary:
+      "Full stack software developer with 3 years of experience in building and maintaining responsive websites in the recruiting industry, utilizing popular web technologies.",
+    //       Versatile Full Stack Developer with 3 Years of Experience
+    // "Experienced full stack developer with 3 years of expertise in crafting and maintaining responsive, high-performance websites in the recruiting industry. Proficient in leveraging modern web technologies to deliver scalable and user-centric solutions."
+
+    // Innovative Full Stack Web Developer
+    // "Creative full stack web developer with 3 years of hands-on experience in the recruiting industry. Specializes in developing responsive and intuitive web applications using the latest industry tools and technologies, ensuring optimal user experiences."
+
+    // Full Stack Developer Focused on Robust Web Solutions
+    // "Dedicated full stack developer with 3 years of experience in building robust and scalable web solutions for the recruiting industry. Skilled in end-to-end development, from front-end design to back-end architecture, with a focus on responsive and efficient applications."
+
+    // Full Stack Developer with a Passion for Clean Code
+    // "Results-driven full stack developer with 3 years of experience in the recruiting sector. Adept at creating and maintaining responsive websites with clean, efficient code using popular web technologies, ensuring seamless performance and scalability."
+
+    // Experienced Full Stack Developer with Industry Expertise
+    // "Full stack developer with 3 years of experience in the recruiting industry, specializing in responsive web design and development. Expert in utilizing modern web technologies to deliver high-quality, user-friendly applications that meet industry needs."
+  },
+  techSkills: [
+    {
+      name: "Frontend",
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "NextJS",
+        "ReactNative",
+      ],
+    },
+    {
+      name: "Backend",
+      skills: ["NodeJS", "ExpressJS", "NestJS"],
+    },
+    {
+      name: "DevOps",
+      skills: [],
+    },
+    {
+      name: "DataBase",
+      skills: ["MongoDB"],
+    },
+  ],
+  experience: [
+    {
+      org: "Nextloop Technologies",
+      status: " | Working Remotely (May2021 - March2023)",
+      summary: ["xjscsjdv", "hsdgcfysf"],
+      role: "Software Engineer",
+    },
+    {
+      org: "Bestpeers Infosystem",
+      status: " | (April2023 - September2024)",
+      summary: ["xjscsjdv", "hsdgcfysf"],
+      role: "Software Engineer",
+    },
+    {
+      org: "Precious Infosystem",
+      status: " | (October2023 - May2024)",
+      summary: ["xjscsjdv", "hsdgcfysf"],
+      role: "Senior Software Engineer",
+    },
+  ],
+  projects: [
+    {
+      name: "BACK OFFICE",
+      description: [
+        "A web app for back office management for the saloon and spa. On this project i worked as a frontend developer This consist of features like appointment cycle including delivery and ratings. The full-fledged calendar and staff management modules.",
+      ],
+      techStack: ["ReactJs", "Bootstrap", "NodeJS"],
+    },
+    {
+      name: "XECTA",
+      description: [
+        "A web app for energy operators.",
+        "Implemented frontend part with react.js, Highchart, Datagrid, GraphQL and Material UI",
+        "GraphQL is used to narrate the data for the Charts, Datagrids and Graphs.",
+        "Worked with Highchart for graphs and charts.",
+      ],
+      techStack: ["ReactJS", "MUI5", "Apollo GraphQL", "HighChart"],
+    },
+    {
+      name: "JAWALERAM-COMEX",
+      description: [
+        "A web app for Event reporting and inventory management for vendors and product manufacturers. Worked as Senior frontend developer, Created multiple form to add informaton about vendors, customers, products, manufacturers",
+      ],
+      techStack: ["ReactJS", "MUI4", "Jest", "Enzyme"],
+    },
+    {
+      name: "Central 2.0",
+      description: [
+        "A web application for Advertisement creation, Bookings, Publications of Australian GOVT and Agency tenders. Worked as Senior frontend developer",
+      ],
+      techStack: ["ReactJS", "MUI6", "MongoDB", "Docker", "cypress"],
+    },
+    {
+      name: "Spectra-AI, Spectra-Pro",
+      description: [
+        "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
+      ],
+      techStack: [
+        "ReactJS",
+        "AntDesign",
+        "MUI",
+        "Apache Echarts",
+        "Mapbox",
+        "Grafana",
+        "Elastic Search",
+        "Promethious",
+        "Everest",
+        "PostgreSQL",
+      ],
+    },
+  ],
+  education: {
+    institute: "IIST INDORE",
+    ug: "Bachelor's Degree in Computer Science and Engineering (2016-2020)",
+  },
 };
