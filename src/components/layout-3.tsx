@@ -5,7 +5,7 @@ import Link from "next/link";
 export function Layout3() {
   return (
     <main className="p-3">
-      <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-200">
+      <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-100">
         <div className="text-black flex ">
           <div className="h-auto w-full">
             <div className="pl-10 pr-12 pt-6 justify-center text-black flex-col">
