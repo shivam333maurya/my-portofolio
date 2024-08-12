@@ -243,22 +243,29 @@ export const MY_DATA3 = {
   ],
   experience: [
     {
-      org: "Nextloop Technologies",
-      status: " | Working Remotely (May2021 - March2023)",
-      summary: ["xjscsjdv", "hsdgcfysf"],
-      role: "Software Engineer",
+      org: "Precious Infosystem",
+      status: " | (October2023 - May2024)",
+      summary: [
+        "Joined as a software engineer and worked on very large scale POCs that use multiple microservices on server side like PostgreSQL, Everest, Prometheus I used different APIs to fetch data from the different Database services and created various web pages with the feature like Mapbox, Network Topology, Multi Step Forms.",
+      ],
+      role: "Senior Software Engineer",
     },
     {
       org: "Bestpeers Infosystem",
-      status: " | (April2023 - September2024)",
-      summary: ["xjscsjdv", "hsdgcfysf"],
+      status: " | (April2023 - September2023)",
+      summary: [
+        "Joined as a software engineer and enhanced my skills using technologies and tools like ReactJS, React Native, MUI, Redux, Zustand, Jest, and Enzyme in projects sector like CMS and Finance, creating highly optimised and responsive web pages.",
+      ],
       role: "Software Engineer",
     },
     {
-      org: "Precious Infosystem",
-      status: " | (October2023 - May2024)",
-      summary: ["xjscsjdv", "hsdgcfysf"],
-      role: "Senior Software Engineer",
+      org: "Nextloop Technologies",
+      status: " | Worked Remotely (May2021 - March2023)",
+      summary: [
+        "I joined as a software engineer and worked on projects like back-office systems and large-scale POCs that required extensive data manipulation and various UI features such as Datagrids, Charts, Graphs, Google Maps, and Calendar.",
+        "I specialised in frontend skills including HTML, CSS, JavaScript, React, and TypeScript.",
+      ],
+      role: "Software Engineer",
     },
   ],
   projects: [
@@ -267,7 +274,7 @@ export const MY_DATA3 = {
       description: [
         "A web app for back office management for the saloon and spa. On this project i worked as a frontend developer This consist of features like appointment cycle including delivery and ratings. The full-fledged calendar and staff management modules.",
       ],
-      techStack: ["ReactJs", "Bootstrap", "NodeJS"],
+      techStack: ["ReactJS", "Bootstrap", "NodeJS"],
     },
     {
       name: "XECTA",
