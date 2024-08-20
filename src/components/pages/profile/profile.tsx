@@ -94,7 +94,8 @@ const Profile = () => {
               <div className="px-4">
                 <SmoothScrollAnimation delay={0.2}>
                   <i className="text-2xl opacity-7 w-max">
-                    I'am Shivam Maurya<span className="text-cyan-800">,</span>
+                    I&apos;am Shivam Maurya
+                    <span className="text-cyan-800">,</span>
                   </i>
                 </SmoothScrollAnimation>
                 <SmoothScrollAnimation delay={0.3}>
