@@ -1,5 +1,5 @@
 "use client";
-import { MY_DATA2 } from "@/app/data";
+import { MY_DATA2 } from "@/utils/data";
 
 export function Layout2() {
   return (
@@ -99,11 +99,11 @@ export function Layout2() {
                 Website,Portfolios,Profile
               </h1>
               <a
-                href={MY_DATA2.profile.linkedIn}
+                href={MY_DATA2.profile.portfolio}
                 target="blank"
                 className="text-[#0A66C2]"
               >
-                {MY_DATA2.profile.linkedIn}
+                {MY_DATA2.profile.portfolio}
               </a>
             </div>
             <div className="pl-8 pr-10 mt-6">

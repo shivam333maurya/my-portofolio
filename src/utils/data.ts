@@ -98,6 +98,7 @@ export const MY_DATA2 = {
     email: "shivammauryan369@gmail.com",
     phone: "+917566729275",
     linkedIn: "https://www.linkedin.com/in/shivam-maurya-77013b173",
+    portfolio: "https://my-portofolio-kohl-three.vercel.app/",
     aboutMe:
       "Full Stack developer with 3 years of experience of building and maintaining responsive website in the recruiting industry. Proficient in HTML, CSS, JavaScript, React and NodeJS Plus modern libraries and frameworks.",
   },
@@ -197,7 +198,7 @@ export const MY_DATA3 = {
     phone: "+917566729275",
     linkedIn: "https://www.linkedin.com/in/shivam-maurya-77013b173",
     gitHub: "https://github.com/shivam333maurya",
-    portfolio: "https://github.com/shivam333maurya",
+    portfolio: "https://my-portofolio-kohl-three.vercel.app/",
     medial: "https://medial.app/user/shivam-maurya-3903802ed3da1",
     summary:
       "Full stack software developer with 3 years of experience in building and maintaining responsive websites in the recruiting industry, utilizing popular web technologies.",

@@ -1,5 +1,5 @@
 "use client";
-import { MY_DATA } from "@/app/data";
+import { MY_DATA } from "@/utils/data";
 
 export function Layout1() {
   return (

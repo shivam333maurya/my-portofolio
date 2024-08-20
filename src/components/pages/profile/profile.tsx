@@ -7,7 +7,7 @@ import { ScrollSnapComponent, SmoothScrollAnimation } from "@/components/ui";
 import Link from "next/link";
 
 import { motion } from "framer-motion";
-import { MY_DATA3 } from "@/app/data";
+import { MY_DATA3 } from "@/utils/data";
 import { MdEmail } from "react-icons/md";
 
 export interface NavButtonProps {

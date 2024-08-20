@@ -1,5 +1,5 @@
 "use client";
-import { MY_DATA3 } from "@/app/data";
+import { MY_DATA3 } from "@/utils/data";
 import Link from "next/link";
 
 export function Layout3() {
@@ -49,7 +49,7 @@ export function Layout3() {
                   |
                   <Link
                     className="text-teal-700"
-                    href={MY_DATA3.profile.linkedIn}
+                    href={MY_DATA3.profile.portfolio}
                     target="black"
                   >
                     Portfolio
