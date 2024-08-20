@@ -11,6 +11,28 @@ export const MY_DATA = {
   },
   experience: [
     {
+      org: "Bestpeers Infosystem",
+      status: "React Developer (April2023 - September2023)",
+      projects: [
+        {
+          name: "JAWALERAM-COMEX",
+          description: ["A web app for Event reporting and Managing."],
+        },
+        {
+          name: "Central 2.0",
+          description: [
+            "A web application for Advertisement creation, Bookings, Publications of Australian GOVT and Agency tenders.",
+          ],
+        },
+        {
+          name: "SpectraAI",
+          description: [
+            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world.",
+          ],
+        },
+      ],
+    },
+    {
       org: "NEXT LOOP TECHNOLOGIES",
       status: " React Developer | Working Remotely (May2021 - March2023)",
       projects: [
@@ -27,28 +49,6 @@ export const MY_DATA = {
             "Implemented frontend part with react.js,CSS and Material UI",
             "GraphQL is used to narrate the data for the Charts, Datagrids and Graphs.",
             "Worked with Highchart for graphs and charts.",
-          ],
-        },
-      ],
-    },
-    {
-      org: "Bestpeers Infosystem",
-      status: "React Developer (April2023 - January2024)",
-      projects: [
-        {
-          name: "JAWALERAM-COMEX",
-          description: ["A web app for Event reporting and Managing."],
-        },
-        {
-          name: "Central 2.0",
-          description: [
-            "A web application for Advertisement creation, Bookings, Publications of Australian GOVT and Agency tenders.",
-          ],
-        },
-        {
-          name: "SpectraAI",
-          description: [
-            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world.",
           ],
         },
       ],
@@ -103,31 +103,8 @@ export const MY_DATA2 = {
   },
   experience: [
     {
-      org: "NEXT LOOP TECHNOLOGIES",
-      status: " React Developer | Working Remotely (May2021 - March2023)",
-      projects: [
-        {
-          name: "BACK OFFICE",
-          description: [
-            "A web app for back office management for the saloon and spa.On this project i worked as a frontend developer This consist of features like appointment cycle including delivery and ratings. The full-fledged calendar and staff management modules.",
-            "Tech stack used ReactJs, Bootstrap",
-          ],
-        },
-        {
-          name: "XECTA",
-          description: [
-            "A web app for energy operators.",
-            "Implemented frontend part with react.js, CSS Highchart, Datagrid, GraphQL and Material UI",
-            "GraphQL is used to narrate the data for the Charts, Datagrids and Graphs.",
-            "Worked with Highchart for graphs and charts.",
-            "Tech stack used ReactJS, MUI5, Apollo GraphQL, HighChart",
-          ],
-        },
-      ],
-    },
-    {
       org: "Bestpeers Infosystem",
-      status: "React Developer (April2023 - January2024)",
+      status: "React Developer (April2023 - September2023)",
       projects: [
         {
           name: "JAWALERAM-COMEX",
@@ -148,6 +125,29 @@ export const MY_DATA2 = {
           description: [
             "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
             "Tech stack used ReactJS, AntDesign, MUI, Apache Echarts, Mapbox, Grafana, Elastic Search Different Databases like Promethious, Everest, Postgres",
+          ],
+        },
+      ],
+    },
+    {
+      org: "NEXT LOOP TECHNOLOGIES",
+      status: " React Developer | Working Remotely (May2021 - March2023)",
+      projects: [
+        {
+          name: "BACK OFFICE",
+          description: [
+            "A web app for back office management for the saloon and spa.On this project i worked as a frontend developer This consist of features like appointment cycle including delivery and ratings. The full-fledged calendar and staff management modules.",
+            "Tech stack used ReactJs, Bootstrap",
+          ],
+        },
+        {
+          name: "XECTA",
+          description: [
+            "A web app for energy operators.",
+            "Implemented frontend part with react.js, CSS Highchart, Datagrid, GraphQL and Material UI",
+            "GraphQL is used to narrate the data for the Charts, Datagrids and Graphs.",
+            "Worked with Highchart for graphs and charts.",
+            "Tech stack used ReactJS, MUI5, Apollo GraphQL, HighChart",
           ],
         },
       ],
@@ -198,6 +198,7 @@ export const MY_DATA3 = {
     linkedIn: "https://www.linkedin.com/in/shivam-maurya-77013b173",
     gitHub: "https://github.com/shivam333maurya",
     portfolio: "https://github.com/shivam333maurya",
+    medial: "https://medial.app/user/shivam-maurya-3903802ed3da1",
     summary:
       "Full stack software developer with 3 years of experience in building and maintaining responsive websites in the recruiting industry, utilizing popular web technologies.",
     //       Versatile Full Stack Developer with 3 Years of Experience

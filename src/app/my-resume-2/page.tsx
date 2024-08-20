@@ -1,4 +1,4 @@
-import { Layout2 } from "@/components";
+import { Layout2 } from "@/components/pages";
 
 export default function Layout() {
   return (

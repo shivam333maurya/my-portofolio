@@ -1,0 +1,21 @@
+export const colors = {
+  bg: {
+    bgSlate1: "bg-slate-300",
+    bgSlate2: "bg-slate-800",
+    bgSlate3: "bg-slate-900",
+    bgViolet1: "bg-violet-300",
+    bgViolet2: "bg-violet-600",
+    bgViolet3: "bg-violet-700",
+    bgViolet4: "bg-violet-800",
+    bgFuchia1: "bg-fuchsia-300",
+    bgFuchia2: "bg-fuchsia-600",
+    bgFuchia3: "bg-fuchsia-800",
+    bgFuchia4: "bg-fuchsia-900",
+    bgRed1: "bg-red-600",
+    bgSky1: "bg-sky-600",
+    bgSky2: "bg-sky-700",
+    bgSky3: "bg-sky-800",
+  },
+  decorator: {},
+  font: {},
+};
