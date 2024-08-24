@@ -25,7 +25,7 @@ const ScrollSnapComponent: React.FC<ScrollSnapComponentProps> = ({
 
   return (
     <div
-      className={`relative ${overflowClass} ${snapDirection} ${snapTypeClass} ${height} ${width} ${invisibleScrollbar}`}
+      className={`relative ${overflowClass} overflow-x-hidden ${snapDirection} ${snapTypeClass} ${height} ${width} ${invisibleScrollbar}`}
       style={{
         scrollSnapType: `${snapDirection} ${snapType}`,
       }}
