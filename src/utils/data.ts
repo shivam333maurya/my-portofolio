@@ -251,6 +251,7 @@ export const MY_DATA3 = {
         "Joined as a software engineer and worked on very large scale POCs that use multiple microservices on server side like PostgreSQL, Everest, Prometheus I used different APIs to fetch data from the different Database services and created various web pages with the feature like Mapbox, Network Topology, Multi Step Forms.",
       ],
       role: "Senior Software Engineer",
+      link: "https://www.preciousinfosystem.com",
     },
     {
       org: "Bestpeers Infosystem",
@@ -259,6 +260,7 @@ export const MY_DATA3 = {
         "Joined as a software engineer and enhanced my skills using technologies and tools like ReactJS, React Native, MUI, Redux, Zustand, Jest, and Enzyme in projects sector like CMS and Finance, creating highly optimised and responsive web pages.",
       ],
       role: "Software Engineer",
+      link: "https://www.bestpeers.com",
     },
     {
       org: "Nextloop Technologies",
@@ -268,6 +270,7 @@ export const MY_DATA3 = {
         "I specialised in frontend skills including HTML, CSS, JavaScript, React, and TypeScript.",
       ],
       role: "Software Engineer",
+      link: "https://www.nextlooptechnologies.com",
     },
   ],
   projects: [

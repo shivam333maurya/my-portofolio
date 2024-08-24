@@ -1,4 +1,3 @@
-"use client";
 import { MY_DATA3 } from "@/utils/data";
 import Link from "next/link";
 

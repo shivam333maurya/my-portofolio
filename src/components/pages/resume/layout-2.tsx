@@ -1,4 +1,3 @@
-"use client";
 import { MY_DATA2 } from "@/utils/data";
 
 export function Layout2() {

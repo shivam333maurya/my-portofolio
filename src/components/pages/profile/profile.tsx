@@ -3,49 +3,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaMediumM } from "react-icons/fa";
 import { EImages } from "@/assets";
-import { ScrollSnapComponent, SmoothScrollAnimation } from "@/components/ui";
-import Link from "next/link";
-
-import { motion } from "framer-motion";
+import {
+  CoolButton,
+  CoolTooltip,
+  ScrollSnapComponent,
+  SmoothScrollAnimation,
+} from "@/components/ui";
 import { MY_DATA3 } from "@/utils/data";
 import { MdEmail } from "react-icons/md";
-
-export interface NavButtonProps {
-  children: React.ReactNode;
-  href: string;
-  target?: string;
-}
-
-const NavButton: React.FC<NavButtonProps> = ({ children, href, target }) => {
-  return (
-    <motion.li
-      whileHover={{ scale: 1.15, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
-      transition={{ type: "spring", stiffness: 300 }}
-      className="text-center px-3 border-b text-cyan-700 hover:text-cyan-600 font-bold border-cyan-700 hover:border-cyan-600 overflow-hidden"
-    >
-      <Link href={href} className="flex items-center justify-center h-full">
-        {children}
-      </Link>
-    </motion.li>
-  );
-};
-const IconCircleButton: React.FC<NavButtonProps> = ({
-  children,
-  href,
-  target,
-}) => {
-  return (
-    <motion.li
-      whileHover={{ scale: 1.15, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
-      transition={{ type: "spring", stiffness: 300 }}
-      className="rounded-full w-10 h-10 flex justify-center items-center p-1 border border-cyan-800"
-    >
-      <Link href={href} target={target} className="text-cyan-800">
-        {children}
-      </Link>
-    </motion.li>
-  );
-};
 
 const Profile = () => {
   const [showProfile, setShowProfile] = useState(false);
@@ -55,11 +20,21 @@ const Profile = () => {
       <div className="h-10">
         <nav className="h-full flex items-center justify-end pt-2">
           <ul className="flex text-lg space-x-4 p-4 overflow-x-auto">
-            <NavButton href="#me">Me</NavButton>
-            <NavButton href="#experience">Experience</NavButton>
-            <NavButton href="#skills">Skills</NavButton>
-            <NavButton href="#contact">Contact</NavButton>
-            <NavButton href="/my-resume">CV</NavButton>
+            <CoolButton type="underlined" href="#me">
+              Me
+            </CoolButton>
+            <CoolButton type="underlined" href="#experience">
+              Experience
+            </CoolButton>
+            <CoolButton type="underlined" href="#skills">
+              Skills
+            </CoolButton>
+            <CoolButton type="underlined" href="#contact">
+              Contact
+            </CoolButton>
+            <CoolButton type="underlined" href="/my-resume">
+              CV
+            </CoolButton>
           </ul>
         </nav>
       </div>
@@ -70,14 +45,16 @@ const Profile = () => {
               {showProfile ? (
                 <SmoothScrollAnimation delay={0.1}>
                   <div className="w-64 h-64 mt-2 ml-2">
-                    <Image
-                      onClick={() => setShowProfile(false)}
-                      alt="profile"
-                      width={200}
-                      height={350}
-                      src={EImages.Profile}
-                      className="rounded-full w-full h-full transition-transform duration-500 ease-in-out transform hover:scale-110 hover:translate-x-10 hover:translate-y-7 object-cover"
-                    />
+                    <CoolTooltip text="Shivam Maurya">
+                      <Image
+                        onClick={() => setShowProfile(false)}
+                        alt="profile"
+                        width={200}
+                        height={350}
+                        src={EImages.Profile}
+                        className="rounded-full w-full h-full transition-transform duration-500 ease-in-out transform hover:scale-110 hover:translate-x-10 hover:translate-y-7 object-cover"
+                      />
+                    </CoolTooltip>
                   </div>
                 </SmoothScrollAnimation>
               ) : (
@@ -86,7 +63,9 @@ const Profile = () => {
                     onClick={() => setShowProfile(true)}
                     className="mt-2 ml-2 w-64 h-64 rounded-full text-cyan-600 hover:text-cyan-700 transition-transform duration-500 ease-in-out transform hover:scale-110 hover:translate-x-10 hover:translate-y-7 bg-gray-700 flex justify-center items-center font-bold"
                   >
-                    <span className="text-4xl">SM</span>
+                    <CoolTooltip text="Shivam Maurya">
+                      <span className="text-4xl">SM</span>
+                    </CoolTooltip>
                   </div>
                 </SmoothScrollAnimation>
               )}
@@ -112,30 +91,52 @@ const Profile = () => {
                 </SmoothScrollAnimation>
                 <SmoothScrollAnimation delay={0.6}>
                   <ul className="flex gap-3 items-center">
-                    <IconCircleButton href={`mailto:${MY_DATA3.profile.email}`}>
-                      <MdEmail fontSize={24} />
-                    </IconCircleButton>
-                    <IconCircleButton
-                      href={MY_DATA3.profile.linkedIn}
-                      target="black"
-                    >
-                      <FaLinkedin fontSize={24} />
-                    </IconCircleButton>
-                    <IconCircleButton
-                      href={MY_DATA3.profile.gitHub}
-                      target="black"
-                    >
-                      <FaGithub fontSize={24} />
-                    </IconCircleButton>
-                    <IconCircleButton
-                      href={MY_DATA3.profile.medial}
-                      target="black"
-                    >
-                      <span className="flex text-xl items-center">
-                        <FaMediumM className="ml-[3px]" />
-                        <span>.</span>
-                      </span>
-                    </IconCircleButton>
+                    <SmoothScrollAnimation delay={0.7}>
+                      <CoolTooltip text="G-mail">
+                        <CoolButton
+                          type="circle"
+                          href={`mailto:${MY_DATA3.profile.email}`}
+                        >
+                          <MdEmail fontSize={24} />
+                        </CoolButton>
+                      </CoolTooltip>
+                    </SmoothScrollAnimation>
+                    <SmoothScrollAnimation delay={0.8}>
+                      <CoolTooltip text="Linked In">
+                        <CoolButton
+                          type="circle"
+                          href={MY_DATA3.profile.linkedIn}
+                          target="black"
+                        >
+                          <FaLinkedin fontSize={24} />
+                        </CoolButton>
+                      </CoolTooltip>
+                    </SmoothScrollAnimation>
+                    <SmoothScrollAnimation delay={0.9}>
+                      <CoolTooltip text="GitHub">
+                        <CoolButton
+                          type="circle"
+                          href={MY_DATA3.profile.gitHub}
+                          target="black"
+                        >
+                          <FaGithub fontSize={24} />
+                        </CoolButton>
+                      </CoolTooltip>
+                    </SmoothScrollAnimation>
+                    <SmoothScrollAnimation delay={1}>
+                      <CoolTooltip text="Medial">
+                        <CoolButton
+                          type="circle"
+                          href={MY_DATA3.profile.medial}
+                          target="black"
+                        >
+                          <span className="flex text-xl items-center">
+                            <FaMediumM className="ml-[3px]" />
+                            <span>.</span>
+                          </span>
+                        </CoolButton>
+                      </CoolTooltip>
+                    </SmoothScrollAnimation>
                   </ul>
                 </SmoothScrollAnimation>
               </div>
@@ -143,7 +144,62 @@ const Profile = () => {
           </div>
           <div className="h-full" id="experience">
             <SmoothScrollAnimation delay={0.2}>
-              <h1 className="text-center"> Experience updating...</h1>
+              <ul className="transform flex flex-col items-center translate-y-1/2">
+                <SmoothScrollAnimation delay={0.3}>
+                  <CoolTooltip text="Nextloop Technologies">
+                    <CoolButton
+                      type="plain"
+                      href={MY_DATA3.experience[2].link}
+                      target="black"
+                    >
+                      <Image
+                        onClick={() => setShowProfile(false)}
+                        alt="profile"
+                        width={200}
+                        height={100}
+                        src={EImages.CompanyLogo1}
+                        className="object-contain h-28 w-200"
+                      />
+                    </CoolButton>
+                  </CoolTooltip>
+                </SmoothScrollAnimation>
+                <SmoothScrollAnimation delay={0.4}>
+                  <CoolTooltip text="Bestpeers Infosystem">
+                    <CoolButton
+                      type="plain"
+                      href={MY_DATA3.experience[1].link}
+                      target="black"
+                    >
+                      <Image
+                        onClick={() => setShowProfile(false)}
+                        alt="profile"
+                        width={200}
+                        height={100}
+                        src={EImages.CompanyLogo2}
+                        className="object-contain h-28 w-200"
+                      />
+                    </CoolButton>
+                  </CoolTooltip>
+                </SmoothScrollAnimation>
+                <SmoothScrollAnimation delay={0.4}>
+                  <CoolTooltip text="Precious Infosystem">
+                    <CoolButton
+                      type="plain"
+                      href={MY_DATA3.experience[0].link}
+                      target="black"
+                    >
+                      <Image
+                        onClick={() => setShowProfile(false)}
+                        alt="profile"
+                        width={200}
+                        height={100}
+                        src={EImages.CompanyLogo3}
+                        className="object-contain h-28 w-200"
+                      />
+                    </CoolButton>
+                  </CoolTooltip>
+                </SmoothScrollAnimation>
+              </ul>
             </SmoothScrollAnimation>
           </div>
           <div className="h-full" id="skills">

@@ -45,11 +45,11 @@ body {
   animation: spin 1s linear infinite;
 }
 
-img {
-  image-rendering: -webkit-optimize-contrast; /* For Chrome (best performance) */
-  image-rendering: crisp-edges; /* For Firefox */
+/* img {
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: crisp-edges; 
   image-rendering: pixelated;
-}
+} */
 
 @keyframes spin {
   0% {
