@@ -1,7 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaMediumM } from "react-icons/fa";
+import {
+  FaGithub,
+  FaJs,
+  FaLinkedin,
+  FaMediumM,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
 import { EImages } from "@/assets";
 import {
   CoolButton,
@@ -11,6 +18,10 @@ import {
 } from "@/components/ui";
 import { MY_DATA3 } from "@/utils/data";
 import { MdEmail } from "react-icons/md";
+import { SiMui, SiNestjs, SiRedux, SiTailwindcss } from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
+import { AiOutlineAntDesign } from "react-icons/ai";
+import { FaGolang, FaJira } from "react-icons/fa6";
 
 const Profile = () => {
   const [showProfile, setShowProfile] = useState(false);
@@ -158,11 +169,12 @@ const Profile = () => {
                         width={200}
                         height={100}
                         src={EImages.CompanyLogo1}
-                        className="object-contain h-28 w-200"
+                        className="object-contain text-red-300 h-28 w-200"
                       />
                     </CoolButton>
                   </CoolTooltip>
                 </SmoothScrollAnimation>
+
                 <SmoothScrollAnimation delay={0.4}>
                   <CoolTooltip text="Bestpeers Infosystem">
                     <CoolButton
@@ -203,9 +215,138 @@ const Profile = () => {
             </SmoothScrollAnimation>
           </div>
           <div className="h-full" id="skills">
-            <SmoothScrollAnimation delay={0.2}>
-              <h1 className="text-center">Skills updating...</h1>
-            </SmoothScrollAnimation>
+            <div className="translate-y-3/4 mt-6 px-10">
+              <SmoothScrollAnimation delay={0.2}>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+                  <SmoothScrollAnimation delay={0.5} initialX={-200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="HTML5">
+                        <Image
+                          onClick={() => setShowProfile(false)}
+                          alt="profile"
+                          width={100}
+                          height={78}
+                          src={EImages.Html}
+                          className="object-contain h-20 w-auto hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialY={-200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="React">
+                        <FaReact
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialY={-200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Redux">
+                        <SiRedux
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialX={200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Next.js">
+                        <RiNextjsLine
+                          fontSize={78}
+                          className="text-cyan-300 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialX={-200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Node.js">
+                        <FaNodeJs
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialY={-200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Tailwind CSS">
+                        <SiTailwindcss
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialY={200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="MUI">
+                        <SiMui
+                          fontSize={74}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialX={200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Ant Design">
+                        <AiOutlineAntDesign
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialX={-200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Go">
+                        <FaGolang
+                          fontSize={78}
+                          className="text-cyan-200 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialY={200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="NestJS">
+                        <SiNestjs
+                          color="#F50057"
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialY={200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="JavaScript">
+                        <FaJs
+                          color="#FFD600"
+                          fontSize={78}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                  <SmoothScrollAnimation delay={0.5} initialX={200}>
+                    <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
+                      <CoolTooltip text="Jira">
+                        <FaJira
+                          fontSize={74}
+                          className="text-cyan-700 hover:animate-rotate-90"
+                        />
+                      </CoolTooltip>
+                    </div>
+                  </SmoothScrollAnimation>
+                </div>
+              </SmoothScrollAnimation>
+            </div>
           </div>
           <div className="h-full" id="contact">
             <SmoothScrollAnimation delay={0.2}>

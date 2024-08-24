@@ -8,6 +8,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        rotateAndReturn: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(90deg)" },
+        },
+      },
+      animation: {
+        "rotate-90": "rotateAndReturn 700ms ease-in-out",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
