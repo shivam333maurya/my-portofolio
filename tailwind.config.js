@@ -22,6 +22,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      cursor: {
+        custom: "url(https://img.icons8.com/sci-fi/48/blue-pointer.png), auto",
+      },
       fontFamily: {
         sans: ["__Inter_20951f"],
       },

@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="cursor-custom">
         {/* <Layout /> */}
         {children}
       </body>

@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { EImages } from "@/assets";
 import {
-  CoolButton,
+  CoolLinkButton,
   CoolTooltip,
   ScrollSnapComponent,
   SmoothScrollAnimation,
@@ -31,21 +31,21 @@ const Profile = () => {
       <div className="h-10">
         <nav className="h-full flex items-center justify-end pt-2">
           <ul className="flex text-lg space-x-4 p-4 overflow-x-auto">
-            <CoolButton type="underlined" href="#me">
+            <CoolLinkButton type="underlined" href="#me">
               Me
-            </CoolButton>
-            <CoolButton type="underlined" href="#experience">
+            </CoolLinkButton>
+            <CoolLinkButton type="underlined" href="#experience">
               Experience
-            </CoolButton>
-            <CoolButton type="underlined" href="#skills">
+            </CoolLinkButton>
+            <CoolLinkButton type="underlined" href="#skills">
               Skills
-            </CoolButton>
-            <CoolButton type="underlined" href="#contact">
+            </CoolLinkButton>
+            <CoolLinkButton type="underlined" href="#contact">
               Contact
-            </CoolButton>
-            <CoolButton type="underlined" href="/my-resume">
+            </CoolLinkButton>
+            <CoolLinkButton type="underlined" href="/my-resume">
               CV
-            </CoolButton>
+            </CoolLinkButton>
           </ul>
         </nav>
       </div>
@@ -104,39 +104,39 @@ const Profile = () => {
                   <ul className="flex gap-3 items-center">
                     <SmoothScrollAnimation delay={0.7}>
                       <CoolTooltip text="G-mail">
-                        <CoolButton
+                        <CoolLinkButton
                           type="circle"
                           href={`mailto:${MY_DATA3.profile.email}`}
                         >
                           <MdEmail fontSize={24} />
-                        </CoolButton>
+                        </CoolLinkButton>
                       </CoolTooltip>
                     </SmoothScrollAnimation>
                     <SmoothScrollAnimation delay={0.8}>
                       <CoolTooltip text="Linked In">
-                        <CoolButton
+                        <CoolLinkButton
                           type="circle"
                           href={MY_DATA3.profile.linkedIn}
                           target="black"
                         >
                           <FaLinkedin fontSize={24} />
-                        </CoolButton>
+                        </CoolLinkButton>
                       </CoolTooltip>
                     </SmoothScrollAnimation>
                     <SmoothScrollAnimation delay={0.9}>
                       <CoolTooltip text="GitHub">
-                        <CoolButton
+                        <CoolLinkButton
                           type="circle"
                           href={MY_DATA3.profile.gitHub}
                           target="black"
                         >
                           <FaGithub fontSize={24} />
-                        </CoolButton>
+                        </CoolLinkButton>
                       </CoolTooltip>
                     </SmoothScrollAnimation>
                     <SmoothScrollAnimation delay={1}>
                       <CoolTooltip text="Medial">
-                        <CoolButton
+                        <CoolLinkButton
                           type="circle"
                           href={MY_DATA3.profile.medial}
                           target="black"
@@ -145,7 +145,7 @@ const Profile = () => {
                             <FaMediumM className="ml-[3px]" />
                             <span>.</span>
                           </span>
-                        </CoolButton>
+                        </CoolLinkButton>
                       </CoolTooltip>
                     </SmoothScrollAnimation>
                   </ul>
@@ -158,7 +158,7 @@ const Profile = () => {
               <ul className="transform flex flex-col items-center translate-y-1/2">
                 <SmoothScrollAnimation delay={0.3}>
                   <CoolTooltip text="Nextloop Technologies">
-                    <CoolButton
+                    <CoolLinkButton
                       type="plain"
                       href={MY_DATA3.experience[2].link}
                       target="black"
@@ -171,13 +171,13 @@ const Profile = () => {
                         src={EImages.CompanyLogo1}
                         className="object-contain text-red-300 h-28 w-200"
                       />
-                    </CoolButton>
+                    </CoolLinkButton>
                   </CoolTooltip>
                 </SmoothScrollAnimation>
 
                 <SmoothScrollAnimation delay={0.4}>
                   <CoolTooltip text="Bestpeers Infosystem">
-                    <CoolButton
+                    <CoolLinkButton
                       type="plain"
                       href={MY_DATA3.experience[1].link}
                       target="black"
@@ -190,12 +190,12 @@ const Profile = () => {
                         src={EImages.CompanyLogo2}
                         className="object-contain h-28 w-200"
                       />
-                    </CoolButton>
+                    </CoolLinkButton>
                   </CoolTooltip>
                 </SmoothScrollAnimation>
                 <SmoothScrollAnimation delay={0.4}>
                   <CoolTooltip text="Precious Infosystem">
-                    <CoolButton
+                    <CoolLinkButton
                       type="plain"
                       href={MY_DATA3.experience[0].link}
                       target="black"
@@ -208,7 +208,7 @@ const Profile = () => {
                         src={EImages.CompanyLogo3}
                         className="object-contain h-28 w-200"
                       />
-                    </CoolButton>
+                    </CoolLinkButton>
                   </CoolTooltip>
                 </SmoothScrollAnimation>
               </ul>
@@ -236,6 +236,7 @@ const Profile = () => {
                     <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                       <CoolTooltip text="React">
                         <FaReact
+                          color="#26C6DA"
                           fontSize={78}
                           className="text-cyan-700 hover:animate-rotate-90"
                         />
@@ -246,6 +247,7 @@ const Profile = () => {
                     <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                       <CoolTooltip text="Redux">
                         <SiRedux
+                          color="#7E57C2"
                           fontSize={78}
                           className="text-cyan-700 hover:animate-rotate-90"
                         />
@@ -266,6 +268,7 @@ const Profile = () => {
                     <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                       <CoolTooltip text="Node.js">
                         <FaNodeJs
+                          color="#21A366"
                           fontSize={78}
                           className="text-cyan-700 hover:animate-rotate-90"
                         />
@@ -276,6 +279,7 @@ const Profile = () => {
                     <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                       <CoolTooltip text="Tailwind CSS">
                         <SiTailwindcss
+                          color="#00ACC1"
                           fontSize={78}
                           className="text-cyan-700 hover:animate-rotate-90"
                         />
@@ -286,6 +290,7 @@ const Profile = () => {
                     <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                       <CoolTooltip text="MUI">
                         <SiMui
+                          color="#0288D1"
                           fontSize={74}
                           className="text-cyan-700 hover:animate-rotate-90"
                         />
@@ -338,6 +343,7 @@ const Profile = () => {
                     <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                       <CoolTooltip text="Jira">
                         <FaJira
+                          color="#2684FF"
                           fontSize={74}
                           className="text-cyan-700 hover:animate-rotate-90"
                         />
