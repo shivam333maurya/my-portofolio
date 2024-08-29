@@ -7,6 +7,7 @@ interface NavButtonProps {
   href: string;
   target?: string;
   type?: string;
+  email?: boolean;
 }
 
 const NavButton: React.FC<NavButtonProps> = ({ children, href }) => {
@@ -26,16 +27,36 @@ const NavButton: React.FC<NavButtonProps> = ({ children, href }) => {
   );
 };
 
-const CircleButton: React.FC<NavButtonProps> = ({ children, href, target }) => {
+const CircleButton: React.FC<NavButtonProps> = ({
+  children,
+  href,
+  target,
+  email,
+}) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    window.location.href = `mailto:${href}`;
+  };
+
   return (
     <motion.li
       whileHover={{ scale: 1.15, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
       transition={{ type: "spring", stiffness: 300 }}
       className="cursor-custom rounded-full w-10 h-10 flex justify-center items-center p-1 border border-cyan-800"
     >
-      <Link href={href} target={target} className="cursor-custom text-cyan-800">
-        {children}
-      </Link>
+      {email ? (
+        <span onClick={handleClick} className="cursor-custom text-cyan-800">
+          {children}
+        </span>
+      ) : (
+        <Link
+          href={href}
+          target={target}
+          className="cursor-custom text-cyan-800"
+        >
+          {children}
+        </Link>
+      )}
     </motion.li>
   );
 };

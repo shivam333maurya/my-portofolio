@@ -104,7 +104,8 @@ const Profile = () => {
                     <CoolTooltip text="G-mail">
                       <CoolLinkButton
                         type="circle"
-                        href={`mailto:${MY_DATA3.profile.email}`}
+                        href={MY_DATA3.profile.email}
+                        email={true}
                       >
                         <MdEmail fontSize={24} />
                       </CoolLinkButton>
@@ -213,7 +214,7 @@ const Profile = () => {
           </SmoothScrollAnimation>
         </div>
         <div className="mt-12" id="skills">
-          <div className="mt-6 px-10">
+          <div className="pt-6 px-10">
             <SmoothScrollAnimation delay={0.2}>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8">
                 <SmoothScrollAnimation delay={0.5} initialX={-200}>
@@ -359,7 +360,8 @@ const Profile = () => {
                 <CoolTooltip text="G-mail">
                   <CoolLinkButton
                     type="circle"
-                    href={`mailto:${MY_DATA3.profile.email}`}
+                    href={MY_DATA3.profile.email}
+                    email={true}
                   >
                     <MdEmail fontSize={24} />
                   </CoolLinkButton>
