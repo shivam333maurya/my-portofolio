@@ -185,6 +185,7 @@ export const MY_DATA2 = {
         "GITHUB",
         "Bitbucket",
         "Jira",
+        "Go",
       ],
     },
   ],
@@ -241,6 +242,15 @@ export const MY_DATA3 = {
     {
       name: "DataBase",
       skills: ["MongoDB"],
+    },
+    {
+      name: "Other",
+      skills: [
+        "Go",
+        // "Docker",
+        // "Kubernetes",
+        // S3
+      ],
     },
   ],
   experience: [
