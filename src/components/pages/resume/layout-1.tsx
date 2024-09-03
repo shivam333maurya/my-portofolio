@@ -1,117 +1,128 @@
-import { MY_DATA } from "@/utils/data";
+import { MY_DATA3 } from "@/utils/data";
+import Link from "next/link";
 
 export function Layout1() {
   return (
     <main className="p-3">
-      <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-200">
+      <div className="h-full flex min-h-[calc(100vh-32px)] max-w-[1111px] m-auto bg-gray-100">
         <div className="text-black flex ">
           <div className="h-auto w-full">
-            <div className="h-44 flex justify-center text-black shadow-[-10px_82px_100px_5px_#c1afaf9c_inset] flex-col">
-              <h1 className="text-center max-[600px]:text-3xl text-5xl font-bold mt-0 pt-4">
-                {MY_DATA.profile.name}
+            <div className="pl-10 pr-12 pt-6 justify-center text-black flex-col">
+              <h1 className="max-[600px]:text-3xl text-4xl font-bold mt-0 pt-4">
+                {MY_DATA3.profile.name}
               </h1>
-              <h1 className="text-center max-[600px]:text-2xl text-3xl font-medium mt-4 mb-2">
-                {MY_DATA.profile.profile}
-              </h1>
+              <div>
+                <h1 className="text-2xl inline font-medium">
+                  {MY_DATA3.profile.phone}
+                </h1>
+                <h1 className="text-2xl inline  font-medium">
+                  |
+                  <Link
+                    className="text-teal-700"
+                    href={`mailto:${MY_DATA3.profile.email}`}
+                  >
+                    Email
+                  </Link>
+                </h1>
+                <h1 className="text-2xl inline font-medium">
+                  |
+                  <Link
+                    className="text-teal-700"
+                    href={MY_DATA3.profile.linkedIn}
+                    target="black"
+                  >
+                    LinkedIn
+                  </Link>
+                </h1>
+                <h1 className="text-2xl inline font-medium">
+                  |
+                  <Link
+                    className="text-teal-700"
+                    href={MY_DATA3.profile.gitHub}
+                    target="black"
+                  >
+                    GitHub
+                  </Link>
+                </h1>
+                <h1 className="text-2xl inline font-medium">
+                  |
+                  <Link
+                    className="text-teal-700"
+                    href={MY_DATA3.profile.portfolio}
+                    target="black"
+                  >
+                    Portfolio
+                  </Link>
+                </h1>
+              </div>
             </div>
-            <div className="pl-8 pr-10 leading-relaxed">
-              <p className="mt-4 py-1.5 px-3 shadow-[-12px_12px_22px_16px_#d7bdbd45_inset] rounded-xl">
-                {MY_DATA.profile.aboutMe}
+            <div className="pl-10 pr-12 mt-4 leading-relaxed">
+              <h1 className="text-2xl font-semibold">SUMMARY:</h1>
+              <p className="rounded-xl text-lg leading-none">
+                {MY_DATA3.profile.summary}
               </p>
             </div>
-            <div className="pl-8 pr-10 mt-4">
-              <h1 className="text-2xl mb-4 font-semibold">EXPERIENCE</h1>
+            <div className="pl-10 pr-12 mt-4">
+              <h1 className="text-2xl font-semibold">EXPERIENCE:</h1>
               <div>
-                {(MY_DATA.experience || []).map((item, id) => {
+                {(MY_DATA3.experience || []).map((item, id) => {
                   return (
-                    <div
-                      className="py-1.5 px-3 mb-3 shadow-[-12px_12px_22px_16px_#d7bdbd45_inset] rounded-xl"
-                      key={"exe" + id}
-                    >
-                      <div className="mb-4">
-                        <h1 className="text-xl font-semibold">{item.org}</h1>
-                        <p>{item.status}</p>
-                      </div>
+                    <div className="mb-3 rounded-xl" key={"exe" + id}>
                       <div>
-                        {(item.projects || []).map((proj, projId) => {
-                          return (
-                            <div className="mb-4" key={"proj" + projId}>
-                              <h1 className="text-xl font-semibold">
-                                {proj.name}
-                              </h1>
-                              <div className="ml-4 leading-relaxed">
-                                {(proj.description || []).map((des, idDes) => {
-                                  return (
-                                    <div
-                                      className="flex align-baseline gap-4"
-                                      key={"des" + idDes}
-                                    >
-                                      <h1> • </h1>
-                                      <p>{des}</p>
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                            </div>
-                          );
-                        })}
+                        <h1 className="text-xl font-semibold">{item.org}</h1>
+                        <div className="text-lg">
+                          <b className="inline font-semibold">{item.role}</b>
+                          <p className="inline">{item.status}</p>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-          <div className="bg-slate-800 w-1/2 text-white">
-            <div className="h-44 leading-relaxed flex gap-0.5 justify-center flex-col pl-6 pr-8">
-              <h1 className="text-left text-sm font-medium pt-4">
-                {MY_DATA.profile.address}
-              </h1>
-              <h1 className="text-left text-sm font-medium">
-                {MY_DATA.profile.email}
-              </h1>
-              <h1 className="text-left text-sm font-medium">
-                Contact no.: {MY_DATA.profile.phone}
-              </h1>
-              <h1 className="text-left text-teal-500 text-sm font-medium">
-                <a href={MY_DATA.profile.linkedIn} target="black">
-                  {MY_DATA.profile.linkedIn}
-                </a>
-              </h1>
-            </div>
-            <div className="pl-6 pr-8 mt-4">
-              <h1 className="text-2xl mb-4 text-teal-500 font-semibold">
-                EDUCATION
-              </h1>
-              <div className="">
-                <div className="mb-4">
-                  <h1 className="text-xl font-semibold">
-                    {MY_DATA.education.institute}
-                  </h1>
-                  <p>{MY_DATA.education.ug}</p>
-                </div>
-              </div>
-            </div>
-            <div className="pl-6 pr-8 mt-4">
-              <h1 className="text-2xl mb-4 text-teal-500 font-semibold">
-                SKILLS
-              </h1>
-              <div className="">
-                {(MY_DATA.skills || []).map((item, skillsId) => {
-                  return (
-                    <div className="mb-4" key={"skills" + skillsId}>
-                      <h1 className="text-xl text-teal-200 font-semibold">
-                        {item.name}
-                      </h1>
-                      <div className="ml-6">
-                        {(item.skillData || []).map((skill, skillId) => {
+                      {/* <div className="pl-6 text-lg">
+                        {(item.summary || []).map((sumItem, sumId) => {
                           return (
                             <div
-                              className="flex align-baseline gap-4"
-                              key={"skill" + skillId}
+                              className="flex align-baseline leading-none gap-4"
+                              key={"des" + sumId}
                             >
                               <h1> • </h1>
-                              <p>{skill}</p>
+                              <p>{sumItem}</p>
+                            </div>
+                          );
+                        })}
+                      </div> */}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="pl-10 pr-12 mt-4">
+              <h1 className="text-2xl font-semibold">PROJECTS:</h1>
+              <div>
+                {(MY_DATA3.projects || []).map((proj, projId) => {
+                  return (
+                    <div className="mb-4" key={"proj" + projId}>
+                      <h1 className="text-xl font-semibold">{proj.name}</h1>
+                      <div className="flex items-center flex-wrap">
+                        <b className="inline text-lg font-semibold">
+                          Tech Stack: &nbsp;{" "}
+                        </b>
+                        {(proj.techStack || []).map((tech, idTech) => {
+                          return (
+                            <p className="text-lg" key={"tech" + idTech}>
+                              {tech}
+                              {idTech < proj.techStack.length - 1 && ","}
+                              &nbsp;
+                            </p>
+                          );
+                        })}
+                      </div>
+                      <div className="ml-4 leading-normal">
+                        {(proj.description || []).map((des, idDes) => {
+                          return (
+                            <div
+                              className="flex text-lg align-baseline leading-none gap-4"
+                              key={"des" + idDes}
+                            >
+                              <h1> • </h1>
+                              <p>{des}</p>
                             </div>
                           );
                         })}
@@ -119,6 +130,54 @@ export function Layout1() {
                     </div>
                   );
                 })}
+              </div>
+            </div>
+            <div className="pl-10 pr-12 mt-4">
+              <h1 className="text-2xl font-semibold">TECHNICAL SKILLS:</h1>
+              <div>
+                {(MY_DATA3.techSkills || []).map((skill, skillId) => {
+                  if (skill.skills.length) {
+                    return (
+                      <div
+                        className="ml-4 flex items-center leading-none"
+                        key={"skill" + skillId}
+                      >
+                        <div className="flex text-lg align-baseline gap-4">
+                          <b> • </b>
+                          <b className="font-semibold">{skill.name}: </b>
+                        </div>
+                        &nbsp;
+                        <div className="flex">
+                          {(skill.skills || []).map((skillItem, idSkill) => {
+                            return (
+                              <div
+                                className="align-baseline gap-4"
+                                key={"skillItem" + idSkill}
+                              >
+                                <p className="text-lg ">
+                                  {skillItem}
+                                  {idSkill < skill.skills.length - 1 && ","}
+                                  &nbsp;
+                                </p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  }
+                })}
+              </div>
+            </div>
+            <div className="pl-10 pb-6 pr-12 mt-4">
+              <h1 className="text-2xl font-semibold">EDUCATION:</h1>
+              <div className="">
+                <div className="mb-4 text-lg">
+                  <b className="inline font-semibold">
+                    {MY_DATA3.education.institute},
+                  </b>
+                  <p className="inline"> {MY_DATA3.education.ug}</p>
+                </div>
               </div>
             </div>
           </div>
