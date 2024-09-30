@@ -9,7 +9,7 @@ const CoolTooltip: React.FC<TooltipProps> = ({ text, children }) => {
   return (
     <div className="relative group inline-block">
       {children}
-      <div className="absolute left-full top-0 transform -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+      <div className="absolute sm:block left-full top-0 transform -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
         <div className="relative w-max bg-gray-800 text-cyan-400 text-basic rounded py-1 px-2">
           {text}
           <svg

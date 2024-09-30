@@ -96,7 +96,7 @@ const PlainButton: React.FC<NavButtonProps> = ({ children, href, target }) => {
   );
 };
 
-const CoolLinkButton: React.FC<NavButtonProps> = (props) => {
+const CoolButton: React.FC<NavButtonProps> = (props) => {
   const { type = "square" } = props;
   if (type === "circle") {
     return <CircleButton {...props} />;
@@ -110,4 +110,4 @@ const CoolLinkButton: React.FC<NavButtonProps> = (props) => {
   return <SquareButton {...props} />;
 };
 
-export { CoolLinkButton };
+export { CoolButton };

@@ -75,19 +75,6 @@ export function Layout1() {
                           <p className="inline">{item.status}</p>
                         </div>
                       </div>
-                      {/* <div className="pl-6 text-lg">
-                        {(item.summary || []).map((sumItem, sumId) => {
-                          return (
-                            <div
-                              className="flex align-baseline leading-none gap-4"
-                              key={"des" + sumId}
-                            >
-                              <h1> • </h1>
-                              <p>{sumItem}</p>
-                            </div>
-                          );
-                        })}
-                      </div> */}
                     </div>
                   );
                 })}

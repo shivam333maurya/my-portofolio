@@ -12,13 +12,14 @@ export const MY_DATA2 = {
   },
   experience: [
     {
-      org: "Precious Infosystem",
-      status: "React Developer (October2023 - January2023)",
+      org: "Technoid Brain IT Solutions",
+      status:
+        "Senior Software Engineer | Working Remotely (October2023 - Present)",
       projects: [
         {
           name: "Spectra-AI, Spectra-Pro",
           description: [
-            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
+            "A large scale web applicaton (SAAS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
             "Tech stack used ReactJS, AntDesign, MUI, Apache Echarts, Mapbox, Grafana, Elastic Search Different Databases like Promethious, Everest, Postgres",
           ],
         },
@@ -26,7 +27,7 @@ export const MY_DATA2 = {
     },
     {
       org: "Bestpeers Infosystem",
-      status: "React Developer (April2023 - September2023)",
+      status: "Software Engineer (April2023 - September2023)",
       projects: [
         {
           name: "JAWALERAM-COMEX",
@@ -42,18 +43,11 @@ export const MY_DATA2 = {
             "Tech stack used ReactJS, MUI6, cypress for automation testing",
           ],
         },
-        {
-          name: "Spectra-AI, Spectra-Pro",
-          description: [
-            "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
-            "Tech stack used ReactJS, AntDesign, MUI, Apache Echarts, Mapbox, Grafana, Elastic Search Different Databases like Promethious, Everest, Postgres",
-          ],
-        },
       ],
     },
     {
       org: "NEXT LOOP TECHNOLOGIES",
-      status: " React Developer | Working Remotely (May2021 - March2023)",
+      status: " Software Engineer | Worked Remotely (May2021 - March2023)",
       projects: [
         {
           name: "BACK OFFICE",
@@ -176,13 +170,13 @@ export const MY_DATA3 = {
   ],
   experience: [
     {
-      org: "Precious Infosystem",
-      status: " | (October2023 - December2023)",
+      org: "Technoid Brain IT Solutions",
+      status: " | (October2023 - Present)",
       summary: [
         "Joined as a software engineer and worked on very large scale POCs that use multiple microservices on server side like PostgreSQL, Everest, Prometheus I used different APIs to fetch data from the different Database services and created various web pages with the feature like Mapbox, Network Topology, Multi Step Forms.",
       ],
       role: "Senior Software Engineer",
-      link: "https://www.preciousinfosystem.com",
+      link: "https://www.technoidbrain.com/",
     },
     {
       org: "Bestpeers Infosystem",
@@ -239,7 +233,7 @@ export const MY_DATA3 = {
     {
       name: "Spectra-AI, Spectra-Pro",
       description: [
-        "A large scale web applicaton (SaaS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
+        "A large scale web applicaton (SAAS application) that provide realtime data of networking devices for different tenants in Network world and GIS world. Worked as an senior frontend developer",
       ],
       techStack: [
         "ReactJS",

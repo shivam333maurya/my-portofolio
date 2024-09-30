@@ -12,9 +12,6 @@ export function Layout2() {
                   <h1 className="max-[600px]:text-3xl text-5xl font-bold mt-0 pt-7">
                     {MY_DATA2.profile.name}
                   </h1>
-                  {/* <h1 className="text-center max-[600px]:text-2xl text-3xl font-medium mt-4 mb-2">
-                      {MY_DATA2.profile.profile}
-                    </h1> */}
                 </div>
                 <div className="leading-relaxed flex gap-0.5 flex-col pr-8">
                   <h1 className="text-left text-sm font-medium pt-4">

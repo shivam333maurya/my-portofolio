@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { EImages } from "@/assets";
 import {
-  CoolLinkButton,
+  CoolButton,
   CoolTooltip,
   SmoothScrollAnimation,
 } from "@/components/ui";
@@ -29,22 +29,22 @@ const Profile = () => {
     <>
       <div className="h-10">
         <nav className="h-full flex items-center justify-end pt-2">
-          <ul className="flex text-lg space-x-4 p-4 overflow-x-auto">
-            <CoolLinkButton type="underlined" href="#me">
+          <ul className="flex text-lg space-x-4 py-4 pl-4 overflow-x-auto pr-7">
+            <CoolButton type="underlined" href="#me">
               Me
-            </CoolLinkButton>
-            <CoolLinkButton type="underlined" href="#experience">
+            </CoolButton>
+            <CoolButton type="underlined" href="#experience">
               Experience
-            </CoolLinkButton>
-            <CoolLinkButton type="underlined" href="#skills">
+            </CoolButton>
+            <CoolButton type="underlined" href="#skills">
               Skills
-            </CoolLinkButton>
-            <CoolLinkButton type="underlined" href="#contact">
+            </CoolButton>
+            <CoolButton type="underlined" href="#contact">
               Contact
-            </CoolLinkButton>
-            <CoolLinkButton type="underlined" href="/my-resume">
+            </CoolButton>
+            <CoolButton type="underlined" href="/my-resume">
               CV
-            </CoolLinkButton>
+            </CoolButton>
           </ul>
         </nav>
       </div>
@@ -102,40 +102,40 @@ const Profile = () => {
                 <ul className="flex gap-3 items-center">
                   <SmoothScrollAnimation delay={0.7}>
                     <CoolTooltip text="G-mail">
-                      <CoolLinkButton
+                      <CoolButton
                         type="circle"
                         href={MY_DATA3.profile.email}
                         email={true}
                       >
                         <MdEmail fontSize={24} />
-                      </CoolLinkButton>
+                      </CoolButton>
                     </CoolTooltip>
                   </SmoothScrollAnimation>
                   <SmoothScrollAnimation delay={0.8}>
                     <CoolTooltip text="Linked In">
-                      <CoolLinkButton
+                      <CoolButton
                         type="circle"
                         href={MY_DATA3.profile.linkedIn}
                         target="black"
                       >
                         <FaLinkedin fontSize={24} />
-                      </CoolLinkButton>
+                      </CoolButton>
                     </CoolTooltip>
                   </SmoothScrollAnimation>
                   <SmoothScrollAnimation delay={0.9}>
                     <CoolTooltip text="GitHub">
-                      <CoolLinkButton
+                      <CoolButton
                         type="circle"
                         href={MY_DATA3.profile.gitHub}
                         target="black"
                       >
                         <FaGithub fontSize={24} />
-                      </CoolLinkButton>
+                      </CoolButton>
                     </CoolTooltip>
                   </SmoothScrollAnimation>
                   <SmoothScrollAnimation delay={1}>
                     <CoolTooltip text="Medial">
-                      <CoolLinkButton
+                      <CoolButton
                         type="circle"
                         href={MY_DATA3.profile.medial}
                         target="black"
@@ -144,7 +144,7 @@ const Profile = () => {
                           <FaMediumM className="ml-[3px]" />
                           <span>.</span>
                         </span>
-                      </CoolLinkButton>
+                      </CoolButton>
                     </CoolTooltip>
                   </SmoothScrollAnimation>
                 </ul>
@@ -157,7 +157,7 @@ const Profile = () => {
             <ul className="flex flex-col items-center">
               <SmoothScrollAnimation delay={0.3}>
                 <CoolTooltip text="Nextloop Technologies">
-                  <CoolLinkButton
+                  <CoolButton
                     type="plain"
                     href={MY_DATA3.experience[2].link}
                     target="black"
@@ -170,13 +170,13 @@ const Profile = () => {
                       src={EImages.CompanyLogo1}
                       className="object-contain text-red-300 h-28 w-200"
                     />
-                  </CoolLinkButton>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
 
               <SmoothScrollAnimation delay={0.4}>
                 <CoolTooltip text="Bestpeers Infosystem">
-                  <CoolLinkButton
+                  <CoolButton
                     type="plain"
                     href={MY_DATA3.experience[1].link}
                     target="black"
@@ -189,25 +189,20 @@ const Profile = () => {
                       src={EImages.CompanyLogo2}
                       className="object-contain h-28 w-200"
                     />
-                  </CoolLinkButton>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
               <SmoothScrollAnimation delay={0.4}>
-                <CoolTooltip text="Precious Infosystem">
-                  <CoolLinkButton
+                <CoolTooltip text="TBIS">
+                  <CoolButton
                     type="plain"
                     href={MY_DATA3.experience[0].link}
                     target="black"
                   >
-                    <Image
-                      onClick={() => setShowProfile(false)}
-                      alt="profile"
-                      width={200}
-                      height={100}
-                      src={EImages.CompanyLogo3}
-                      className="object-contain h-28 w-200"
-                    />
-                  </CoolLinkButton>
+                    <h2 className="bg-gradient-to-r text-center from-blue-500 to-red-500 text-transparent bg-clip-text font-bold text-4xl">
+                      Technoid Brain IT Solutions
+                    </h2>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
             </ul>
@@ -222,7 +217,7 @@ const Profile = () => {
                     <CoolTooltip text="HTML5">
                       <Image
                         onClick={() => setShowProfile(false)}
-                        alt="profile"
+                        alt="html"
                         width={100}
                         height={78}
                         src={EImages.Html}
@@ -358,40 +353,40 @@ const Profile = () => {
             <ul className="flex gap-3 items-center justify-center mb-3">
               <SmoothScrollAnimation delay={0.7}>
                 <CoolTooltip text="G-mail">
-                  <CoolLinkButton
+                  <CoolButton
                     type="circle"
                     href={MY_DATA3.profile.email}
                     email={true}
                   >
                     <MdEmail fontSize={24} />
-                  </CoolLinkButton>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
               <SmoothScrollAnimation delay={0.8}>
                 <CoolTooltip text="Linked In">
-                  <CoolLinkButton
+                  <CoolButton
                     type="circle"
                     href={MY_DATA3.profile.linkedIn}
                     target="black"
                   >
                     <FaLinkedin fontSize={24} />
-                  </CoolLinkButton>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
               <SmoothScrollAnimation delay={0.9}>
                 <CoolTooltip text="GitHub">
-                  <CoolLinkButton
+                  <CoolButton
                     type="circle"
                     href={MY_DATA3.profile.gitHub}
                     target="black"
                   >
                     <FaGithub fontSize={24} />
-                  </CoolLinkButton>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
               <SmoothScrollAnimation delay={1}>
                 <CoolTooltip text="Medial">
-                  <CoolLinkButton
+                  <CoolButton
                     type="circle"
                     href={MY_DATA3.profile.medial}
                     target="black"
@@ -400,7 +395,7 @@ const Profile = () => {
                       <FaMediumM className="ml-[3px]" />
                       <span>.</span>
                     </span>
-                  </CoolLinkButton>
+                  </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
             </ul>
