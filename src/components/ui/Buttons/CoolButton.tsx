@@ -15,7 +15,7 @@ const NavButton: React.FC<NavButtonProps> = ({ children, href }) => {
     <motion.li
       whileHover={{ scale: 1.15, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="cursor-custom text-center px-3 border-b text-cyan-700 hover:text-cyan-600 font-bold border-cyan-700 hover:border-cyan-600 overflow-hidden"
+      className="cursor-custom bg-black text-center px-3 border-b text-cyan-700 hover:text-cyan-600 font-bold border-cyan-700 hover:border-cyan-600 overflow-hidden"
     >
       <Link
         href={href}
@@ -42,7 +42,7 @@ const CircleButton: React.FC<NavButtonProps> = ({
     <motion.li
       whileHover={{ scale: 1.15, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="cursor-custom rounded-full w-10 h-10 flex justify-center items-center p-1 border border-cyan-800"
+      className="cursor-custom bg-black rounded-full w-10 h-10 flex justify-center items-center p-1 border border-cyan-800"
     >
       {email ? (
         <span onClick={handleClick} className="cursor-custom text-cyan-800">
@@ -66,7 +66,7 @@ const SquareButton: React.FC<NavButtonProps> = ({ children, href }) => {
     <motion.li
       whileHover={{ scale: 1.05, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="cursor-custom text-center py-2 px-3 mb-3 border text-cyan-700 hover:text-cyan-600 font-bold border-cyan-700 hover:border-cyan-600 overflow-hidden"
+      className="cursor-custom bg-black text-center py-2 px-3 mb-3 border text-cyan-700 hover:text-cyan-600 font-bold border-cyan-700 hover:border-cyan-600 overflow-hidden"
     >
       <Link
         href={href}
@@ -83,7 +83,7 @@ const PlainButton: React.FC<NavButtonProps> = ({ children, href, target }) => {
     <motion.li
       whileHover={{ scale: 1.05, boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="cursor-custom text-center py-2 px-3 mb-3 text-cyan-700 hover:text-cyan-600 font-bold overflow-hidden"
+      className="cursor-custom bg-black text-center py-2 px-3 mb-3 text-cyan-700 hover:text-cyan-600 font-bold overflow-hidden"
     >
       <Link
         href={href}

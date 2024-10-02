@@ -200,7 +200,7 @@ const Profile = () => {
                     target="black"
                   >
                     <h2 className="bg-gradient-to-r text-center from-blue-500 to-red-500 text-transparent bg-clip-text font-bold text-4xl">
-                      Technoid Brain IT Solutions
+                      Aadvik Foods
                     </h2>
                   </CoolButton>
                 </CoolTooltip>

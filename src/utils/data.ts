@@ -12,7 +12,7 @@ export const MY_DATA2 = {
   },
   experience: [
     {
-      org: "Technoid Brain IT Solutions",
+      org: "Aadvik Foods",
       status:
         "Senior Software Engineer | Working Remotely (October2023 - Present)",
       projects: [
@@ -170,13 +170,13 @@ export const MY_DATA3 = {
   ],
   experience: [
     {
-      org: "Technoid Brain IT Solutions",
+      org: "Aadvik Foods",
       status: " | (October2023 - Present)",
       summary: [
         "Joined as a software engineer and worked on very large scale POCs that use multiple microservices on server side like PostgreSQL, Everest, Prometheus I used different APIs to fetch data from the different Database services and created various web pages with the feature like Mapbox, Network Topology, Multi Step Forms.",
       ],
       role: "Senior Software Engineer",
-      link: "https://www.technoidbrain.com/",
+      link: "https://www.addvikk.com/",
     },
     {
       org: "Bestpeers Infosystem",

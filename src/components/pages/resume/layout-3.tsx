@@ -21,7 +21,7 @@ export function Layout3() {
                     className="text-teal-700"
                     href={`mailto:${MY_DATA3.profile.email}`}
                   >
-                    Email
+                    {MY_DATA3.profile.email}
                   </Link>
                 </h1>
                 <h1 className="text-2xl inline font-medium">

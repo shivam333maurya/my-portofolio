@@ -30,8 +30,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  background-image: linear-gradient(to right, #01040a 1px, transparent 1px),
-    linear-gradient(to bottom, #01040a 1px, transparent 1px);
+  background-image: linear-gradient(to right, #01040ad0 1px, transparent 1px),
+    linear-gradient(to bottom, #01040ad0 1px, transparent 1px);
   background-size: 40px 40px; /* Adjust the grid size */
   font-family: "Calibri", sans-serif;
 }
