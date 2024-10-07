@@ -1,3 +1,4 @@
+import { sanitizeHtmlContent } from "@/utils/controllers";
 import { MY_DATA3 } from "@/utils/data";
 import Link from "next/link";
 
@@ -83,7 +84,13 @@ export function Layout3() {
                               key={"des" + sumId}
                             >
                               <h1> • </h1>
-                              <p>{sumItem}</p>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: sanitizeHtmlContent(sumItem),
+                                }}
+                              >
+                                {/* {sumItem} */}
+                              </p>
                             </div>
                           );
                         })}
@@ -102,12 +109,12 @@ export function Layout3() {
                       <h1 className="text-xl font-semibold">{proj.name}</h1>
                       <div className="flex items-center flex-wrap">
                         <b className="inline text-lg font-semibold">
-                          Tech Stack: &nbsp;{" "}
+                          Tech Stack: &nbsp;
                         </b>
                         {(proj.techStack || []).map((tech, idTech) => {
                           return (
                             <p className="text-lg" key={"tech" + idTech}>
-                              {tech}
+                              <b>{tech}</b>
                               {idTech < proj.techStack.length - 1 && ","}
                               &nbsp;
                             </p>
@@ -122,7 +129,13 @@ export function Layout3() {
                               key={"des" + idDes}
                             >
                               <h1> • </h1>
-                              <p>{des}</p>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: sanitizeHtmlContent(des),
+                                }}
+                              >
+                                {/* {des} */}
+                              </p>
                             </div>
                           );
                         })}
@@ -155,7 +168,7 @@ export function Layout3() {
                                 key={"skillItem" + idSkill}
                               >
                                 <p className="text-lg ">
-                                  {skillItem}
+                                  <b> {skillItem}</b>
                                   {idSkill < skill.skills.length - 1 && ","}
                                   &nbsp;
                                 </p>

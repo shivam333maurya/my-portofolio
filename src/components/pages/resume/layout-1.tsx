@@ -1,3 +1,4 @@
+import { sanitizeHtmlContent } from "@/utils/controllers";
 import { MY_DATA3 } from "@/utils/data";
 import Link from "next/link";
 
@@ -94,7 +95,7 @@ export function Layout1() {
                         {(proj.techStack || []).map((tech, idTech) => {
                           return (
                             <p className="text-lg" key={"tech" + idTech}>
-                              {tech}
+                              <b> {tech}</b>
                               {idTech < proj.techStack.length - 1 && ","}
                               &nbsp;
                             </p>
@@ -109,7 +110,11 @@ export function Layout1() {
                               key={"des" + idDes}
                             >
                               <h1> • </h1>
-                              <p>{des}</p>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: sanitizeHtmlContent(des),
+                                }}
+                              />
                             </div>
                           );
                         })}
@@ -142,7 +147,7 @@ export function Layout1() {
                                 key={"skillItem" + idSkill}
                               >
                                 <p className="text-lg ">
-                                  {skillItem}
+                                  <b> {skillItem}</b>
                                   {idSkill < skill.skills.length - 1 && ","}
                                   &nbsp;
                                 </p>
