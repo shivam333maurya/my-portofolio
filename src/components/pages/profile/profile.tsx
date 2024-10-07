@@ -154,7 +154,7 @@ const Profile = () => {
         </div>
         <div className="mt-12" id="experience">
           <SmoothScrollAnimation delay={0.2}>
-            <ul className="flex flex-col items-center">
+            <ul className="flex flex-col-reverse items-center">
               <SmoothScrollAnimation delay={0.3}>
                 <CoolTooltip text="Nextloop Technologies">
                   <CoolButton
@@ -192,8 +192,8 @@ const Profile = () => {
                   </CoolButton>
                 </CoolTooltip>
               </SmoothScrollAnimation>
-              <SmoothScrollAnimation delay={0.4}>
-                <CoolTooltip text="TBIS">
+              {/* <SmoothScrollAnimation delay={0.4}>
+                <CoolTooltip text="AF">
                   <CoolButton
                     type="plain"
                     href={MY_DATA3.experience[0].link}
@@ -204,7 +204,7 @@ const Profile = () => {
                     </h2>
                   </CoolButton>
                 </CoolTooltip>
-              </SmoothScrollAnimation>
+              </SmoothScrollAnimation> */}
             </ul>
           </SmoothScrollAnimation>
         </div>
