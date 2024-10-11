@@ -92,14 +92,14 @@ const Profile = () => {
                 </h1>
               </SmoothScrollAnimation>
               <SmoothScrollAnimation delay={0.4}>
-                <h4 className="text-lg text-cyan-100 mb-1">
+                <h4 className="text-xl text-cyan-100 mb-3 mt-3">
                   Full stack software developer with 3 years of experience in
                   building and maintaining responsive websites in the recruiting
                   industry, utilizing popular web technologies.
                 </h4>
               </SmoothScrollAnimation>
               <SmoothScrollAnimation delay={0.6}>
-                <ul className="flex gap-3 items-center">
+                <ul className="flex gap-4 items-center">
                   <SmoothScrollAnimation delay={0.7}>
                     <CoolTooltip text="G-mail">
                       <CoolButton
@@ -156,56 +156,60 @@ const Profile = () => {
           <SmoothScrollAnimation delay={0.2}>
             <ul className="flex flex-col-reverse items-center">
               <SmoothScrollAnimation delay={0.3}>
-                <CoolTooltip text="Nextloop Technologies">
-                  <CoolButton
-                    type="plain"
-                    href={MY_DATA3.experience[2].link}
-                    target="black"
-                  >
-                    <Image
-                      onClick={() => setShowProfile(false)}
-                      alt="profile"
-                      width={200}
-                      height={100}
-                      src={EImages.CompanyLogo1}
-                      className="object-contain text-red-300 h-28 w-200"
-                    />
-                  </CoolButton>
-                </CoolTooltip>
+                {/* <CoolTooltip text="Nextloop Technologies"> */}
+                <CoolButton
+                  type="plain"
+                  href={MY_DATA3.experience[2].link}
+                  target="black"
+                >
+                  <Image
+                    alt="profile"
+                    width={200}
+                    height={100}
+                    src={EImages.CompanyLogo1}
+                    className="object-contain text-red-300 h-28 w-200"
+                  />
+                </CoolButton>
+                {/* </CoolTooltip> */}
               </SmoothScrollAnimation>
 
               <SmoothScrollAnimation delay={0.4}>
-                <CoolTooltip text="Bestpeers Infosystem">
-                  <CoolButton
-                    type="plain"
-                    href={MY_DATA3.experience[1].link}
-                    target="black"
-                  >
-                    <Image
-                      onClick={() => setShowProfile(false)}
-                      alt="profile"
-                      width={200}
-                      height={100}
-                      src={EImages.CompanyLogo2}
-                      className="object-contain h-28 w-200"
-                    />
-                  </CoolButton>
-                </CoolTooltip>
+                {/* <CoolTooltip text="Bestpeers Infosystem"> */}
+                <CoolButton
+                  type="plain"
+                  href={MY_DATA3.experience[1].link}
+                  target="black"
+                >
+                  <Image
+                    alt="profile"
+                    width={200}
+                    height={100}
+                    src={EImages.CompanyLogo2}
+                    className="object-contain h-28 w-200"
+                  />
+                </CoolButton>
+                {/* </CoolTooltip> */}
               </SmoothScrollAnimation>
-              {/* <SmoothScrollAnimation delay={0.4}>
-                <CoolTooltip text="Precious Infosystem">
-                  <CoolButton
-                    type="plain"
-                    href={MY_DATA3.experience[0].link}
-                    target="black"
-                  >
-                    <h2 className="bg-gradient-to-r text-center from-blue-500 to-red-500 text-transparent bg-clip-text font-bold text-4xl">
-                      Precious Infosystem
-                    </h2>
-                    
-                  </CoolButton>
-                </CoolTooltip>
-              </SmoothScrollAnimation> */}
+              <SmoothScrollAnimation delay={0.4}>
+                {/* <CoolTooltip text="Precious Infosystem"> */}
+                <CoolButton
+                  type="plain"
+                  href={MY_DATA3.experience[0].link}
+                  target="black"
+                >
+                  {/* <h2 className="text-gradient-primary text-center font-bold text-4xl">
+                    Precious Infosystem
+                  </h2> */}
+                  <Image
+                    alt="precious"
+                    width={200}
+                    height={100}
+                    src={EImages.CompanyLogo3}
+                    className="object-contain h-28 w-200"
+                  />
+                </CoolButton>
+                {/* </CoolTooltip> */}
+              </SmoothScrollAnimation>
             </ul>
           </SmoothScrollAnimation>
         </div>
@@ -217,7 +221,6 @@ const Profile = () => {
                   <div className="flex justify-center items-center bg-gray-900/50 p-4 rounded-lg">
                     <CoolTooltip text="HTML5">
                       <Image
-                        onClick={() => setShowProfile(false)}
                         alt="html"
                         width={100}
                         height={78}

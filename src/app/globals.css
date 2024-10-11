@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-blue-500 to-red-500 text-transparent bg-clip-text;
+  }
+
+  .placement-top-right {
+    @apply left-full top-0 transform -translate-y-1/2 ml-2;
+  }
+
+  .placement-bottom-left {
+    @apply right-[calc(100%+6px)] -bottom-3 transform -translate-y-1/2 ml-2;
+  }
+
+  .placement-svg-bottom-right {
+    @apply left-0 top-1/2 transform -translate-y-1/2 -translate-x-2  rotate-90;
+  }
+
+  .placement-svg-bottom-left {
+    @apply right-0 top-1/2 transform -translate-y-1/2 translate-x-2  -rotate-90;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

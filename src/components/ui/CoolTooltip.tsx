@@ -1,35 +1,20 @@
-interface TooltipProps {
+interface ITooltipProps {
   text: string;
   children: React.ReactNode;
+  placement?: IPlacementProps;
 }
 
-const CoolTooltip: React.FC<TooltipProps> = ({ text, children }) => {
-  // const [tooltipStyle, setTooltipStyle] = useState({
-  //   left: "0px",
-  //   top: "0px",
-  //   opacity: 0,
-  // });
+interface IPlacementProps {
+  icon: string;
+  text: string;
+}
 
-  // const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-  //   setTooltipStyle({
-  //     left: `${e.clientX + 10}px`, // Offset to the right
-  //     top: `${e.clientY - 20}px`, // Offset above the cursor
-  //     opacity: 1,
-  //   });
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setTooltipStyle({ ...tooltipStyle, opacity: 0 });
-  // };
+const CoolTooltip: React.FC<ITooltipProps> = ({ text, children }) => {
   return (
-    <div
-      className="relative group inline-block"
-      // onMouseEnter={handleMouseMove}
-      // onMouseLeave={handleMouseLeave}
-    >
+    <div className="relative group inline-block">
       {children}
       <div
-        className="fixed sm:block left-full top-0 transform -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+        className="absolute sm:block left-full top-0 transform -translate-y-1/2 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
         // style={{
         //   left: tooltipStyle.left,
         //   top: tooltipStyle.top,
